@@ -1,4 +1,4 @@
-FROM nginx:1.10.1-alpine
+FROM nginx:latest
 COPY src/html /usr/share/nginx/html
 EXPOSE 80
 CMD [ "ngnix", "-g", "daemon off;"]
